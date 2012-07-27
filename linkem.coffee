@@ -2,7 +2,7 @@ $ = @jQuery
 
 $.fn.linkem = ->
   linked = this
-  @on "keyup", ->
+  @on "keyup mouseup", ->
     text = $(this).val()
     linked.each ->
       $(this).text(text)
