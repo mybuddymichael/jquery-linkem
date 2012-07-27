@@ -4,14 +4,14 @@ A jQuery plugin for easy replication of DOM text.
 
 What?
 -----
-`linkem.js` lets you easily link DOM elements to an input element, for
+`linkem` lets you easily link DOM elements to an input element, for
 real-time replication of text across your page. As a user is typing in
 an input field, or selecting from a drop-down menu, that text can be
 shown immediately wherever you like.
 
 How?
 ----
-Source jQuery and linkem.js:
+Source jQuery and `linkem`:
 ```diff
  <!DOCTYPE html>
  <html>
