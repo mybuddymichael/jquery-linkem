@@ -32,7 +32,7 @@ Then source jQuery and `linkem`:
 +    <script
 +      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
 +    </script>
-+    <script src="jquery.linkem.js"></script>
++    <script src="path/to/js/jquery.linkem.js"></script>
    </head>
    <body>
    </body>
