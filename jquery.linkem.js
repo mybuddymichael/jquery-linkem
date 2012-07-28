@@ -6,7 +6,7 @@
 
   $.fn.linkem = function() {
     var linked = this;
-    this.on( "keydown keyup mousedown mouseup", function() {
+    this.on( "input change", function() {
       linked.text( $(this).val() );
     });
   };
