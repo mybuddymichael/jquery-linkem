@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>jquery-linkem</title>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+    </script>
+    <script src="jquery.linkem.js"></script>
+    <style>
+      body {
+        width: 460px;
+        margin: 32px auto;
+        padding: 0;
+
+        font: 32px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #333333;
+        text-rendering: optimizeLegibility;
+      }
+
+      h1 {
+        margin: 32px 0 8px 8px;
+
+        font-size: 64px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 96%;
+        height: 48px;
+        margin: 0;
+        padding: 0 8px;
+
+        border-top: 1px solid #cecece;
+        border-left: 1px solid #c9c9c9;
+        border-right: 1px solid #c9c9c9;
+        border-bottom: 1px solid #afafaf;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+
+        background-color: #dddddd;
+
+        font: inherit;
+        color: #198adb;
+      }
+
+      input:focus {
+        height: 46px;
+        padding-left: 7px;
+
+        outline: none;
+        border: 2px solid #198adb;
+      }
+
+      input::-webkit-input-placeholder {
+        color: #8e8e8e;
+      }
+
+      input::-moz-placeholder {
+        color: #8e8e8e;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>linkem</h1>
+    <input class="linkables" placeholder="Type something!"/>
+    <div class="linkables"></div>
+    <script>
+      $(".linkables").linkem()
+    </script>
+  </body>
+</html>
