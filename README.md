@@ -5,9 +5,9 @@ A jQuery plugin for easy replication of DOM text.
 What?
 -----
 `linkem` lets you easily link DOM elements to an input element, for
-real-time replication of text across your page. As a user is typing in
-an input field, or selecting from a drop-down menu, that text can be
-shown immediately wherever you like.
+real-time replication of text across your page. As a user is typing text
+into an input field, or selecting from a drop-down menu, that text can
+be shown immediately wherever you like.
 
 How?
 ----
@@ -19,7 +19,7 @@ Source jQuery and `linkem`:
 +    <script
 +      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
 +    </script>
-+    <script src="linkem.js"></script>
++    <script src="jquery.linkem.js"></script>
    </head>
    <body>
    </body>
@@ -35,11 +35,11 @@ same `class` attribute:
      <script
        src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
      </script>
-     <script src="linkem.js"></script>
+     <script src="jquery.linkem.js"></script>
    </head>
    <body>
-+    <input class="linkme" />
-+    <div class="linkme"></div>
++    <input class="linkables" />
++    <div class="linkables"></div>
    </body>
  </html>
 ```
@@ -52,12 +52,12 @@ Use jQuery to call `.linkem()` on the class:
      <script
        src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
      </script>
-     <script src="linkem.js"></script>
+     <script src="jquery.linkem.js"></script>
    </head>
    <body>
-     <input class="linkme" />
-     <div class="linkme"></div>
-+    <script>$(".linkme").linkem()</script>
+     <input class="linkables" />
+     <div class="linkables"></div>
++    <script>$(".linkables").linkem()</script>
    </body>
  </html>
 ```
