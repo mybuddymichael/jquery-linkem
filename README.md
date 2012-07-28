@@ -1,6 +1,6 @@
 linkem.js
 =========
-A jQuery plugin for easy replication of DOM text.
+A jQuery plugin for easy replication of `<input>` text.
 
 What?
 -----
