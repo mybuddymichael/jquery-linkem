@@ -9,9 +9,22 @@ real-time replication of text across your page. As a user is typing text
 into an input field, or selecting from a drop-down menu, that text can
 be shown immediately wherever you like.
 
+Show me!
+-------
+Go to [the demo site][demo] for a live example of the plugin in action.
+
 How?
 ----
-Source jQuery and `linkem`:
+
+Install it:
+```shell
+$ cd path/to/my/js
+$ wget https://raw.github.com/mybuddymichael/jquery-linkem/master/jquery.linkem.js
+```
+Or you can go [directly to the code][raw] and copy and paste it into a file
+called `jquery.linkem.js` wherever your JavaScript files live.
+
+Then source jQuery and `linkem`:
 ```diff
  <!DOCTYPE html>
  <html>
@@ -63,3 +76,7 @@ Use jQuery to call `.linkem()` on the class:
 ```
 
 Type away and watch your input instantly replicate!
+
+
+[demo]: http://mybuddymichael.github.com/jquery-linkem/
+[raw]: https://raw.github.com/mybuddymichael/jquery-linkem/master/jquery.linkem.js
