@@ -25,6 +25,16 @@
         font-weight: bold;
       }
 
+      a {
+        font: inherit;
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
       input {
         width: 96%;
         height: 48px;
@@ -60,14 +70,48 @@
       input::-moz-placeholder {
         color: #8e8e8e;
       }
+
+      #wrapper {
+        width: 95.5%;
+        margin: 0 auto;
+      }
+
+      div.linkables {
+        margin: 16px 0;
+        min-height: 64px;
+      }
+
+      span.placeholder {
+        margin: inherit;
+
+        font-size: 18px;
+        font-style: italic;
+        color: #aaaaaa;
+      }
+
+      footer {
+        font-size: 14px;
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
-    <h1>linkem</h1>
+    <h1>
+      <a href="https://github.com/mybuddymichael/jquery-linkem">linkem</a>
+    </h1>
     <input class="linkables" placeholder="Type something!"/>
-    <div class="linkables"></div>
+    <div id="wrapper">
+      <div class="linkables"></div>
+      <footer>
+        <a href="https://github.com/mybuddymichael/jquery-linkem">
+          A mybuddymichael endeavor.
+        </a>
+      </footer>
+    </div>
     <script>
-      $(".linkables").linkem()
+      $(".linkables").linkem();
+      $("div.linkables").html(
+        "<span class='placeholder'>Your input should show up here.</span>");
     </script>
   </body>
 </html>
