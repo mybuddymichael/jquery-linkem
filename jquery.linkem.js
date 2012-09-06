@@ -2,15 +2,15 @@
 // Copyright Michael Hanson
 // https://github.com/mybuddymichael/jquery-linkem
 
-(function( $ ) {
+(function($) {
 
   $.fn.linkem = function() {
     var linked = this;
-    this.on( "input change", function() {
-      linked.text( $(this).val() );
+    this.on("input change", function() {
+      linked.text($(this).val());
     });
   };
 
   return this;
 
-})( jQuery );
+})(jQuery);
